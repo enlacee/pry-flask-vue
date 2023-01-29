@@ -1,4 +1,6 @@
 
+
+Project using `python`, `vue`, `nginx`, `docker-compose`
 ## v1
     docker build -t pry-flask-vue .
     docker images
