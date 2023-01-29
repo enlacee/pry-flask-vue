@@ -6,7 +6,9 @@ WORKDIR /app
 # Available to mount the volumen on container
 VOLUME /app
 EXPOSE 5000
-COPY . .
+ENV FLASK_ENV=development
+# ADD . /app
+# COPY . .
+COPY requirements.txt /app/requirements.txt
 RUN pip3 install -r requirements.txt
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "-p 5000"]
-
+# CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "-p 5000"]
