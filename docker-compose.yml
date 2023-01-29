@@ -3,7 +3,6 @@ services:
   app:
     build: flask
     volumes:
-      # - app:/app
       - ./flask:/app
     ports:
       - "5000:5000"
@@ -15,5 +14,3 @@ services:
       - 81:80
     depends_on:
       - app
-# volumes:
-#   app:
