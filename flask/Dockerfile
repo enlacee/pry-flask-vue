@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM python:3.8-slim-buster
+ENV TZ="America/Lima"
 # FROM python:3.8-alpine
 RUN mkdir /app
 WORKDIR /app
